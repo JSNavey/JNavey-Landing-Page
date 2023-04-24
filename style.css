@@ -1,3 +1,5 @@
+/*@import "/global.css";*/
+
 /*** CSS Reset ***/
 *,
 *::before,
@@ -30,6 +32,28 @@ textarea {
     color: unset;
 }
 
+/*** Assign fonts and viewpoints ***/
+html, body {
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#container {
+    height: 100vh;
+    max-width: 85%;
+    margin: auto;
+}
+
+/*** Navbar ***/
+.nav {
+    border: 1px solid red;
+    display: flex;
+
+}
 
 
+.nav-items {
+    border: 1px solid blue;
+    display: flex;
+}
 
