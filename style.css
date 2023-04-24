@@ -46,14 +46,28 @@ html, body {
 
 /*** Navbar ***/
 .nav {
-    border: 1px solid red;
+    height: 20%;
     display: flex;
-
+    justify-content: space-between;   
 }
-
 
 .nav-items {
-    border: 1px solid blue;
+    width: 85%;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
+.nav-lists {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.avl-weather {
+    padding: 0 2em;
+}
