@@ -43,7 +43,7 @@ textarea {
     --font-family: 'Nunito', sans-serif;
 }
 
-/*** Assign fonts ***/
+/*** Assign repeated values to the elements ***/
 html, body {
     font-size: 16px;
     font-family: var(--font-family);
@@ -51,6 +51,12 @@ html, body {
 
 h1 {
     font-family: var(--header-font-family);
+}
+
+a {
+    text-decoration: none;
+    font-size: 1em;
+    color: var(--black);
 }
 
 /*** Navbar ***/
