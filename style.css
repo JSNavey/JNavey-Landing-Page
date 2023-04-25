@@ -34,20 +34,24 @@ textarea {
     color: unset;
 }
 
-/*** Assign fonts and viewpoints ***/
-html, body {
-    font-size: 16px;
-    font-family: 'Nunito', sans-serif;
+/*** Set up CSS Variables ***/
+:root {
+    ---bg-color: #275656;
+    --white: #fff;
+    --black: #000;
+    --header-font-family: 'Lobster', cursive;
+    --font-family: 'Nunito', sans-serif;
 }
 
-/*
-#container {
-    height: 100vh;
-    max-width: 85%;
-    margin: auto;
-    border: 1px solid red;
+/*** Assign fonts ***/
+html, body {
+    font-size: 16px;
+    font-family: var(--font-family);
 }
-*/
+
+h1 {
+    font-family: var(--header-font-family);
+}
 
 /*** Navbar ***/
 .nav {
@@ -82,22 +86,15 @@ html, body {
 
 /*** Welcome Heading ***/
 .welcome-header {
-    background-color: #275656;
+    background-color: var(---bg-color);
     height: 50em;
 }
-
-/*
-.header-bg-top {
-    background-color: #98D7C2;
-    height: 40em;
-}
-*/
 
 .header-bg-diaganal {
     width: 0;
     height: 0;
     border-left: 100vw solid transparent;
-    border-bottom: 14vw solid #fff;
+    border-bottom: 14vw solid var(--white);
     margin-top: -13.9vw;
 }
 
@@ -113,21 +110,20 @@ html, body {
 .welcome-text {
     width: 40%;
     font-size: 1.5em;;
-    color: #fff;
+    color: var(--white);
 }
 
 .welcome-word {
     font-size: 3em;
     margin-bottom: 0;
-    color: #fff;
+    color: var(--white);
 }
 
 .avl-word {
-    font-family: 'Lobster', cursive;
     font-size: 6em;
-    color: #fff;
+    color: var(--white);
     letter-spacing: 5px;
-    text-shadow: 2px 2px 3px #000;
+    text-shadow: 2px 2px 3px var(--black);
     margin: 0 auto 0.5em auto;
 }
 
@@ -138,6 +134,5 @@ html, body {
     top: 28em;
     left: 0;
     right: 0;
-    margin: 0 auto;
-    
+    margin: 0 auto;   
 }
